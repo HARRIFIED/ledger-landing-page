@@ -54,33 +54,33 @@ const GitHubIcon = ({ size = 18 }: { size?: number }) => (
 const features = [
   {
     icon: "M4 6h16M4 6v13a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V6M9 11h6M9 15h6",
-    title: "Double-entry by construction",
-    body: "Every posting balances before it commits — debits always equal credits, enforced at the core in a single ACID transaction. No unbalanced state is representable.",
+    title: "Books that always balance",
+    body: "Debits always equal credits — guaranteed. Every posting is validated and committed as one atomic transaction, so your ledger can never end up unbalanced or half-written.",
   },
   {
     icon: "M12 3v18M5 8l7-5 7 5M5 8v8l7 5 7-5V8",
-    title: "Event-sourced ledger",
-    body: "An immutable journal with periodic snapshots gives you full point-in-time history, replayable balances, and audit trails that reconcile by design.",
+    title: "Full point-in-time history",
+    body: "Know exactly what every balance was at any moment. Each change is captured as an immutable event, giving you replayable history and audit trails that reconcile by design.",
   },
   {
     icon: "M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6",
     title: "Multi-currency & FX",
-    body: "Money is integer minor units. Internal rate tables, quotes, and configurable spreads handle cross-currency as a single balanced entry via FX position accounts.",
+    body: "Hold and move value across any number of currencies. Built-in rate tables, quotes, and configurable spreads settle every cross-currency transfer cleanly as a single balanced entry.",
   },
   {
     icon: "M13 2L3 14h9l-1 8 10-12h-9l1-8z",
-    title: "Built for scale",
-    body: "A gRPC service mesh with a transactional outbox streaming events to Kafka. Designed for ~5,000 TPS with hot-account sharding and async snapshots.",
+    title: "Grows with your volume",
+    body: "Handle more transactions by adding capacity, not re-architecting. The ledger scales out horizontally, so throughput keeps pace as your business grows.",
   },
   {
     icon: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z M9 12l2 2 4-4",
-    title: "Federated authentication",
-    body: "Validate your own IdP's tokens via configurable JWKS at the gateway — Harrified Ledger never owns your users. An optional bundled IAM ships for teams without one.",
+    title: "Bring your own identity",
+    body: "Plug in your existing identity provider and keep full ownership of your users — Harrified Ledger authenticates against your IdP and never stores their credentials. No IdP yet? An optional IAM module is bundled in.",
   },
   {
     icon: "M5 12V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5M4 12h16v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7zM8 16h.01",
     title: "Self-hosted, your data",
-    body: "Run Harrified Ledger in your own environment on your own database, Finacle-style. Your ledger data never leaves your infrastructure — we never host or touch it.",
+    body: "Run Harrified Ledger in your own environment on your own database. Your ledger data never leaves your infrastructure — we never host or touch it.",
   },
 ];
 
